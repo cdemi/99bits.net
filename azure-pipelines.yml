@@ -8,7 +8,7 @@ container: monachus/hugo:latest
 
 steps:
 - script: hugo --source $(Build.SourcesDirectory) --destination $(Build.ArtifactStagingDirectory)  --enableGitInfo --i18n-warnings --verbose
-  displayName: 'Publish Artifact: drop'
+  displayName: 'Hugo Generate'
 
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
