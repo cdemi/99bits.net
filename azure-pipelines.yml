@@ -4,7 +4,7 @@ trigger:
 pool:
   vmImage: 'ubuntu-16.04'
 
-container: monachus/hugo
+container: monachus/hugo:latest
 
 steps:
 - script: hugo --source $(Build.SourcesDirectory) --destination $(Build.ArtifactStagingDirectory)  --enableGitInfo --i18n-warnings --verbose
