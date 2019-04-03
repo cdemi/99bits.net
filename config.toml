@@ -19,8 +19,7 @@ disqusShortname = ""
   # CSS class.
 
   # Provide your metadata here.
-  name = "Your name"
-  description = "Your description"
+  description = "The best full-stack IT Consultants in Malta"
 
   # Link custom assets relative to /static
   custom_css = []
