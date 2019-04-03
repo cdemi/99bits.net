@@ -2,14 +2,13 @@ trigger:
 - master
 
 pool:
-  vmImage: 'windows-2019'
+  vmImage: 'ubuntu-16.04'
+
+container: monachus/hugo:latest
 
 steps:
-- task: giuliovdev.hugo-extension.hugo-build-task.HugoTask@1
-  displayName: 'Hugo Generate '
-  inputs:
-    destination: '$(Build.ArtifactStagingDirectory)'
-    extendedVersion: true
+- script: hugo --source $(Build.SourcesDirectory) --destination $(Build.ArtifactStagingDirectory)  --enableGitInfo --i18n-warnings --verbose
+  displayName: 'Hugo Generate'
 
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
