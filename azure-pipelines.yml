@@ -9,7 +9,6 @@ steps:
   displayName: 'Hugo Generate '
   inputs:
     destination: '$(Build.ArtifactStagingDirectory)'
-    extendedVersion: true
 
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
