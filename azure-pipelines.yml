@@ -2,7 +2,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'Ubuntu-16.04'
+  vmImage: Hosted Windows 2019 with VS2019
 
 steps:
 - task: giuliovdev.hugo-extension.hugo-build-task.HugoTask@1
