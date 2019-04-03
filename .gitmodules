@@ -2,7 +2,3 @@
 	path = themes/hugo-fresh
 	url = https://github.com/StefMa/hugo-fresh
 	branch = master
-[submodule "themes/forty"]
-	path = themes/forty
-	url = https://github.com/MarcusVirg/forty.git
-	branch = master
